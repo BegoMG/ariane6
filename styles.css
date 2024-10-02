@@ -1,0 +1,253 @@
+
+
+:root {
+    --lv_blue: #001c4c;
+    --black: #1d1d1e;
+    /* --font-size: 1.1rem; */
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+ 
+
+/* div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+} */
+
+
+/* TIMES HEADLINE */
+
+/* IMPORTANTE!!!! 
+
+ -webkit-font-smoothing: antialiased;
+
+*/
+
+/* font-family: 'TRegular', serif; */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @font-face {
+  font-family: 'HBold';
+  src: url('https://static.lavanguardia.com/css/fonts/v2/TiemposHeadline-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'HSemibold';
+  src: url('https://lavanguardia-github.github.io/tipos/TiemposHeadline-Semibold.woff2') format('woff');
+}
+
+
+@font-face {
+  font-family: 'TRegular';
+  src: url('https://static.lavanguardia.com/css/fonts/v2/TiemposText-Regular.woff2') format('woff2');
+}
+
+
+
+
+
+
+
+.lv_header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.lv_header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.lv_header h1,
+.lv_header h4,
+.lv_header h6 {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 3px 3px 10px black;
+}
+
+.lv_header h1 {
+  font-family: 'HBold', serif;
+  font-size: 4rem;
+  margin-bottom: -30px;
+}
+
+.lv_header h4 {
+  font-family: 'HSemibold', serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.lv_header h6 {
+  font-family: 'HSemibold', serif;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+.lv_sectionsWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.lv_fixedBackground {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.lv_fixedBackground.img-1 {
+  background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/Diapo1200_1.png");
+}
+
+.lv_fixedBackground.img-2 {
+  background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/Diapo1200_2.png");
+}
+
+.lv_fixedBackground.img-3 {
+  background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/Diapo1200_3.png");
+}
+
+.lv_fixedBackground.img-4 {
+  background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/Diapo1200_4.png");
+}
+
+.lv_fixedBackground.img-5 {
+  background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/Diapo1200_5.png");
+}
+
+.lv_imgFull {
+  display: flex;
+  justify-content: center;
+}
+
+.lv_imgFull img {
+  width: 100%;
+  height: 100%;
+}
+
+.lv_randomText {
+  width: 100%;
+  max-width: 710px;
+  margin: 0 auto;
+}
+
+
+p {
+  font-family: 'TRegular', serif;
+  font-size: 1.2rem;
+  margin: 60px 10%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.lv_fuentesText {
+  width: 100%;
+  max-width: 710px;
+  margin: 0 auto;
+  font-size: 0, 5rem;
+  color: rgb(101, 101, 101);
+}
+
+.lv_fuentesText span {
+  /*display: flex;*/
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .lv_fixedBackground.img-1 {
+      background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/DiaposMovil-6.jpg");
+  }
+
+  .lv_fixedBackground.img-2 {
+      background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/DiaposMovil-7.jpg");
+  }
+
+  .lv_fixedBackground.img-3 {
+      background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/DiaposMovil-7.jpg");
+  }
+
+  .lv_fixedBackground.img-4 {
+      background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/DiaposMovil-8.jpg");
+  }
+
+  .lv_fixedBackground.img-5 {
+      background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/DiaposMovil-9.jpg");
+  }
+}
+
+
+
+
+
+
+
+
