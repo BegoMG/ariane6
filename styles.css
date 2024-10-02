@@ -157,29 +157,40 @@ time, mark, audio, video {
 .lv_fixedBackground {
   height: 100vh;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.lv_fixedBackground::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  background-attachment: fixed;
+  z-index: -1;
 }
 
-.lv_fixedBackground.img-1 {
+.lv_fixedBackground.img-1::before {
   background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/Diapo1200_1.png");
 }
 
-.lv_fixedBackground.img-2 {
+.lv_fixedBackground.img-2::before {
   background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/Diapo1200_2.png");
 }
 
-.lv_fixedBackground.img-3 {
+.lv_fixedBackground.img-3::before {
   background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/Diapo1200_3.png");
 }
 
-.lv_fixedBackground.img-4 {
+.lv_fixedBackground.img-4::before {
   background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/Diapo1200_4.png");
 }
 
-.lv_fixedBackground.img-5 {
+.lv_fixedBackground.img-5::before {
   background-image: url("https://visuals.lavanguardia.com/ai2html/20240707_ArianeScroll/Diapo1200_5.png");
 }
 
